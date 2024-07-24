@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "iframestweaker",
+	"version": "${version}",
+	"name": "I Frames Tweaker Mod",
+	"description": "This is a Mod By Happy1speed that makes everything have less I frames",
+	"authors": [
+		"Happy1speed"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/iframestweaker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.happyspeed.iframestweaker.IFramesTweakerMod"
+		],
+		"client": [
+			"net.happyspeed.iframestweaker.IFramesTweakerModClient"
+		],
+		"fabric-datagen": [
+			"net.happyspeed.iframestweaker.IFramesTweakerModDataGenerator"
+		]
+	},
+	"mixins": [
+		"iframestweaker.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.8",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
