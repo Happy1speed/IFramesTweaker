@@ -63,7 +63,7 @@ public abstract class LivingEntityMixin extends Entity {
 		else if (source.isOf(DamageTypes.INDIRECT_MAGIC)) {
 			invulnerableTime = 10;
 		}
-		else if (source.isOf(DamageTypes.INDIRECT_MAGIC)) {
+		else if (source.isOf(DamageTypes.MAGIC)) {
 			invulnerableTime = 10;
 		}
 		else if (Objects.equals(source.getType().msgId(), "slashdamage")) {
