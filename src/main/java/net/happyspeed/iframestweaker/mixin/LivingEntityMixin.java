@@ -45,32 +45,32 @@ public abstract class LivingEntityMixin extends Entity {
 
 			}
 			else {
-				invulnerableTime = 15;
+				invulnerableTime = 10;
 			}
 		}
 		else if (source.isIn(DamageTypeTags.IS_PROJECTILE)) {
-			invulnerableTime = 0;
+			invulnerableTime = ModConfigs.PROJECTILEIFRAMES;
 		}
 		else if (source.isIn(DamageTypeTags.IS_FALL)) {
-			invulnerableTime = 0;
+			invulnerableTime = ModConfigs.FALLIFRAMES;
 		}
 		else if (source.isIn(DamageTypeTags.BYPASSES_COOLDOWN)) {
 			invulnerableTime = 0;
 		}
 		else if (source.isIn(DamageTypeTags.IS_FIRE)) {
-			invulnerableTime = 10;
+			invulnerableTime = ModConfigs.FIREIFRAMES;
 		}
 		else if (source.isOf(DamageTypes.INDIRECT_MAGIC)) {
-			invulnerableTime = 10;
+			invulnerableTime = ModConfigs.INDIRECTMAGICIFRAMES;
 		}
 		else if (source.isOf(DamageTypes.MAGIC)) {
-			invulnerableTime = 10;
+			invulnerableTime = ModConfigs.DIRECTMAGICIFRAMES;
 		}
 		else if (Objects.equals(source.getType().msgId(), "slashdamage")) {
 			invulnerableTime = 5;
 		}
 		else {
-			invulnerableTime = 20;
+			invulnerableTime = ModConfigs.MISCIFRAMES;
 		}
 		return invulnerableTime;
 	}
