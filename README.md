@@ -4,3 +4,5 @@ Invincibility frames are now calculated off of the attacking weapon's attack spe
 Arrows now give no I frames.
 Magic damage and fire damage gives 10 ticks of I frames.
 Fall gives no I frames.
+
+Neoforge verion github can be found here: https://github.com/Happy1speed/IFramesTweakerNeo
